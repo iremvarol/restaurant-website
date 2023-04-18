@@ -558,6 +558,10 @@ header div {
   #CONTACT
 \*-----------------------------------*/
 
+iframe {
+  width: 100%;
+}
+
 .contact-form {
   width: 60%;
   margin: 0 auto;
@@ -652,4 +656,189 @@ hr {
   height: 10px;
   background-color: blueviolet;
   margin: 20px 0;
+}
+
+@media all {
+  .navbar-nav {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    transform: translateY(0);
+    padding: 0;
+    flex-direction: row;
+    pointer-events: all;
+  }
+}
+
+@media (min-width: 450px) {
+  :root {
+    --fs-1: 54px;
+    --fs-2: 36px;
+    --fs-3: 20px;
+  }
+
+  .home-text {
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  .home .btn-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dialog-1 {
+    top: 15%;
+  }
+
+  .dialog-2 {
+    right: 15%;
+  }
+
+  .shape-1 {
+    top: 10%;
+    left: 15%;
+  }
+}
+
+/*-----------------------------------*\ 
+  #for tablat
+\*-----------------------------------*/
+
+@media (min-width: 570px) {
+  :root {
+    --mw: 550px;
+  }
+
+  .home,
+  .about,
+  .services,
+  .product,
+  .testimonials,
+  .footer-wrapper {
+    max-width: var(--mw);
+    margin-inline: auto;
+  }
+}
+
+/*-----------------------------------*\ 
+  #for large tablat
+\*-----------------------------------*/
+
+@media (min-width: 768px) {
+  :root {
+    -fs-1: 72px;
+    --fs-2: 40px;
+    --fs-3: 22px;
+
+    --mw: 720px;
+  }
+  .section-title {
+    max-width: 460px;
+  }
+
+  .about-left .img-box {
+    aspect-ratio: 5 / 3;
+  }
+
+  .service-card {
+    display: grid;
+  }
+
+  .service-card .card-number {
+    grid-row: 1 / 3;
+    line-height: 1;
+    margin-right: 30px;
+  }
+
+  .service-card .card-heading {
+    grid-column: 2 / 3;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 40px;
+    margin-bottom: 70px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*-----------------------------------*\ 
+  #for desktop
+\*-----------------------------------*/
+
+@media (min-width: 1024px) {
+  :root {
+    --py: 100px;
+    --mw: 950px;
+  }
+
+  .navbar {
+    padding: 35px 30px;
+  }
+
+  .home {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .home-left {
+    text-align: left;
+  }
+
+  .home-text {
+    margin-inline: 0;
+  }
+
+  .home .btn-group {
+    justify-content: start;
+  }
+
+  .about {
+    grid-template-columns: 3fr 4fr;
+    gap: 80px;
+    align-items: center;
+    padding: var(--py) var(px) 120px;
+  }
+
+  .about-left .img-box {
+    aspect-ratio: auto;
+  }
+
+  .services {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials {
+    padding-bottom: 200px;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*-----------------------------------*\ 
+  #for large desktop
+\*-----------------------------------*/
+
+@media (min-width: 1200px) {
+  :root {
+    --mw: 1150px;
+  }
+
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
