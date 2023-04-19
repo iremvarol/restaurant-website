@@ -165,7 +165,6 @@ section {
 
 header div {
   margin: auto;
-  max-width: 800px;
 }
 
 .navbar {
@@ -190,7 +189,6 @@ header div {
   align-items: center;
   background-color: plum;
   border: solid 1px white;
-  float: inline-end;
   padding: 10px;
   border-radius: 5px;
 }
