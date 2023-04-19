@@ -255,10 +255,10 @@ header div {
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
-  padding-top: 200px;
   padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-top: 185px;
 }
 
 .home-left {
@@ -322,6 +322,7 @@ header div {
   max-width: var(--mw);
   margin-inline: auto;
   margin-bottom: 100px;
+  margin-top: 200px;
 }
 
 .text-md {
@@ -609,6 +610,11 @@ textarea {
   margin-bottom: 100px;
 }
 
+.contact .section-title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 /*-----------------------------------*\ 
   #FOOTER
 \*-----------------------------------*/
@@ -773,11 +779,6 @@ hr {
 \*-----------------------------------*/
 
 @media (min-width: 1024px) {
-  :root {
-    --py: 100px;
-    --mw: 950px;
-  }
-
   .navbar {
     padding: 35px 30px;
   }
@@ -819,10 +820,6 @@ hr {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .testimonials {
-    padding-bottom: 200px;
-  }
-
   .footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -841,4 +838,32 @@ hr {
   .services {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+body {
+  align: center;
+}
+table {
+  border: 2px solid plum;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+td,
+th {
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+caption {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding-bottom: 20px;
+  background-image: ;
+}
+tr:nth-of-type(even) {
+  background-color: lavenderblush;
+}
+thead tr:first-of-type {
+  background-color: lavenderblush;
 }
